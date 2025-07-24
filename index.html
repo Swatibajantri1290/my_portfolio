@@ -1,0 +1,257 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swati Bajantri | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f3ec78, #af4261);
+      color: #333;
+      overflow-x: hidden;
+      transition: background 1s ease;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+      position: relative;
+    }
+
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background: #ffb703;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .page-section {
+      display: none;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 3rem auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .page-section.visible {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h1, h2 {
+      color: #3a0ca3;
+      text-align: center;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+    }
+
+    a {
+      color: #3f37c9;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .home-content {
+      text-align: center;
+      padding: 3rem 1rem;
+      animation: fadeUp 1s ease-out;
+    }
+
+    .home-content h1 {
+      font-size: 2.8rem;
+      color: #001d3d;
+    }
+
+    .home-content p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #333;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#" data-section="home">Home</a></li>
+      <li><a href="#" data-section="about">About Me</a></li>
+      <li><a href="#" data-section="skills">Skills</a></li>
+      <li><a href="#" data-section="projects">Projects</a></li>
+      <li><a href="#" data-section="achievements">Achievements</a></li>
+      <li><a href="#" data-section="certifications">Certifications</a></li>
+      <li><a href="#" data-section="contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="page-section visible">
+      <div class="home-content">
+        <h1>Hello, I'm Swati Bajantri</h1>
+        <p>Machine Learning Engineer | Software Developer</p>
+        <p><em>Welcome to my portfolio!</em></p>
+      </div>
+    </section>
+
+    <section id="about" class="page-section">
+      <h2>About Me</h2>
+      <p>I’m Swati Bajantri, passionate about Artificial Intelligence and Data Science. I'm constantly exploring innovative tech solutions to solve real-world problems and enhance user experiences.</p>
+    </section>
+
+    <section id="skills" class="page-section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, Machine Learning basics , C, Java</li>
+        <li>HTML, CSS, JavaScript, Flask</li>
+        <li>MySQL, Git & GitHub, REST APIs</li>
+      </ul>
+    </section>
+
+     <section id="projects" class="page-section">
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      <strong>StegoWorld:</strong> A secure steganography-based application that hides text inside images, supporting multilingual text (Kannada, Hindi, English) with encryption and decryption features. Built using Python and Tkinter.
+    </li>
+    <li>
+      <strong>AI-Based Recruitment System:</strong> A machine learning-powered platform to automate resume screening, rank candidates based on skill match, and assist HR teams in shortlisting suitable candidates efficiently.
+    </li>
+    <li>
+      <strong>AI-Driven Voice Technology:</strong> Developed a speech-based assistant aimed at helping senior citizens and illiterate individuals interact with devices using voice commands, using NLP and speech recognition tools.
+    </li>
+  </ul>
+</section>
+
+
+    <section id="achievements" class="page-section">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Secured 2nd place in CodeQuest 2.0 (Vencer-2k25)</li>
+        <li>Participated in 24-Hour National level Hackathon, Halyal</li>
+        <li>Competed in Weefa Robotics Hackathon</li>
+        <li>Code Debugging participant at Yukti-2k25</li>
+        <li>Completed multiple certification courses</li>
+      </ul>
+    </section>
+
+     <section id="certifications" class="page-section">
+  <h2>Certifications</h2>
+  <ul>
+    <li><strong>NPTEL Certification on Cyber Security and Privacy:</strong> Covered key concepts of data privacy, cryptography, access control, and secure communication protocols.</li>
+    <li><strong>NPTEL Certification on Data Analytics using Python:</strong> Focused on data manipulation, visualization, and statistical analysis using libraries like pandas and matplotlib.</li>
+    <li><strong>Certification on Cloud Computing:</strong> Introduced to cloud models (IaaS, PaaS, SaaS), virtualization, and deployment techniques on platforms like AWS and Azure.</li>
+    <li><strong>Certification on Programming in Java:</strong> Learned object-oriented programming, exception handling, collections, and file I/O in Java.</li>
+    <li><strong>Certification on Cloud Computing using Python:</strong> Integrated Python programming with cloud operations using services like AWS Lambda and APIs.</li>
+    <li><strong>Certificate of completion on Aptitude & Soft Skill Enhancing Program:</strong> Completed a training program focusing on logical reasoning, quantitative aptitude, communication, and interpersonal skills.</li>
+  </ul>
+</section>
+
+
+      <section id="contact" class="page-section">
+  <h2>Contact Me</h2>
+  
+  <h2>Feel free to reach out- I'm just a click away!</h2>
+  <div style="display: flex; justify-content: center; gap: 2rem; font-size: 2rem;">
+    <a href="mailto:swatibajantrii@gmail.com" title="Email" target="_blank" style="color: #d62828;">
+      📧
+    </a>
+    <a href="tel:+917676491469" title="Phone" style="color: #0077b6;">
+      📞
+    </a>
+    <a href="https://www.linkedin.com/in/swati-bajantri" title="LinkedIn" target="_blank" style="color: #0a66c2;">
+      💼
+    </a>
+    <a href="https://swatibajantri1290.github.io/myportfolioo/" title="GitHub" target="_blank" style="color: #000;">
+      💻
+    </a>
+  </div>
+</section>
+
+
+  </main>
+
+  <script>
+    const links = document.querySelectorAll("nav a");
+    const sections = document.querySelectorAll(".page-section");
+
+    links.forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const sectionId = link.getAttribute("data-section");
+
+        sections.forEach(section => {
+          section.classList.remove("visible");
+        });
+
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+          targetSection.classList.add("visible");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
